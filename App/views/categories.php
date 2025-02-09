@@ -24,7 +24,7 @@
                 </div>
                 <div class="flex space-x-4">
                     <a href="login.html" class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition">Connexion</a>
-                    <a href="signup.html" class="px-4 py-2 bg-white text-purple-800 rounded-lg hover:bg-purple-100 transition">Inscription</a>
+                    <a href="/youdemy-V2/categories" class="px-4 py-2 bg-white text-purple-800 rounded-lg hover:bg-purple-100 transition">Inscription</a>
                 </div>
             </div>
         </div>
