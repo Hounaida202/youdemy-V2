@@ -38,8 +38,8 @@
         <!-- ---------------------------------------------------------------------------- --> 
 <?php foreach($categories as $categorie):?>
             <!-- Frontend Category -->
-            <a href="../Apps/cours.php?categorie_id=<?=htmlspecialchars($categorie->getcategorieId())?>" class="group">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+            <a href="/youdemy-V2/categories/cours/<?= htmlspecialchars($categorie->getcategorieId()) ?>" class="group">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
                     <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
                         <img src="<?=htmlspecialchars($categorie->getimage())?>" alt="">
                     </div>

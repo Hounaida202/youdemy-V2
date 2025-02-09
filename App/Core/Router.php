@@ -1,9 +1,7 @@
 <?php
 namespace App\Core;
-
 class Router {
     private $routes = [];
-
     public function add($method, $path, $controller, $controllerMethod) {
         $this->routes[] = [
             'method' => strtoupper($method),
@@ -12,7 +10,6 @@ class Router {
             'controllerMethod' => $controllerMethod
         ];
     }
-
     public function dispatch() {
         $requestMethod = $_SERVER['REQUEST_METHOD'];
         $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -32,7 +29,6 @@ class Router {
                 }
             }
         }
-
         http_response_code(404);
         echo "404 - Page Not Found";
     }

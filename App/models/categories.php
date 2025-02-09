@@ -2,6 +2,7 @@
 namespace App\models;
 
 use App\Config\database;
+
 use PDO;
 class categories{
     private $categorie_id;
@@ -18,7 +19,7 @@ class categories{
 
     }
 
-public function getcategorieId(){
+public  function getcategorieId(){
     return $this->categorie_id;
 }
 public function getimage(){
